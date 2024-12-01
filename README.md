@@ -135,13 +135,15 @@ A NAT Network is created to enable secure communication between virtual machines
 ```
 ![image](https://github.com/user-attachments/assets/1e4775fc-733e-48f4-bf31-0e0c225f51c1)
 
+
+### 6. Simulate Network Attack
+#### On Ubuntu VM (Target)
  - Start Wireshark and capture the network traffic to analyze incoming and outgoing packets.
 ```bash
   sudo wireshark
 ```
 ![image](https://github.com/user-attachments/assets/3a4ca74e-d397-4628-b0f5-83f5ebcace79)
 
-### 6. Simulate Network Attack
 #### On Kali Linux (Attacker):
 Run a simple Nmap scan to discover open ports and services of the ubuntu VM : (10.0.2.15 > ubuntu ip)
 ```bash
