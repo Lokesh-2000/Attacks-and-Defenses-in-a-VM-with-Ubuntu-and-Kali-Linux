@@ -152,6 +152,11 @@ Run a simple Nmap scan to discover open ports and services of the ubuntu VM : (1
 - We have successfully simulated an attack, as indicated by the red lines in the image below.
 ![image](https://github.com/user-attachments/assets/50bc309c-67a1-4d59-97b5-cff931faed41)
 
+## Conclusion
+This setup involves creating two VMs in VirtualBox: one with Ubuntu (target system) and one with Kali Linux (attacker system). Both VMs are connected via a NAT network, allowing them to communicate securely while isolated from the host system.
+
+We installed necessary tools like Wireshark on Ubuntu and Nmap on Kali. On Ubuntu, we enabled UFW firewall for protection and allowed only Kali's IP to connect. After disabling the firewall for testing, we used Nmap on Kali to scan for open ports on Ubuntu, simulating a network attack. This setup demonstrates network attack simulations and defenses in a controlled environment.
+
 
 
 
